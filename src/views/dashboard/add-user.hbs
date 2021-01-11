@@ -1,0 +1,70 @@
+<div class="container" align="center">
+    <div class="row" >
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6" >
+           <div class="jumbotron" align="center">
+               <h3>Add User</h3>
+               <hr>
+               <br>
+                <form method="POST" action="/auth/signup">
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div class="row mb-4">
+                        <div class="col">
+                        <div class="form-outline mb-4">
+                            <input type="text" name="name" class="form-control" required />
+                            <label class="form-label" for="form6Example1">First name</label>
+                        </div>
+                        </div>
+                        <div class="col">
+                        <div class="form-outline mb-4">
+                            <input type="text" name="lastname" class="form-control" required />
+                            <label class="form-label" for="form6Example2">Last name</label>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input -->
+                    <div class="form-outline mb-4">
+                        <input type="text" name="username" class="form-control" required/>
+                        <label class="form-label" for="username">User name</label>
+                    </div>
+
+                    <!-- Text input -->
+                    <div class="form-outline mb-4">
+                        <input type="text" name="address" class="form-control" size="50"  required />
+                        <label class="form-label" for="address">Address</label>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" name="mail" class="form-control"  required/>
+                        <label class="form-label" for="mail">Email</label>
+                    </div>
+
+                    <!-- Number input -->
+                    <div class="form-outline mb-4">
+                        <input type="number" name="phone" class="form-control"  required/>
+                        <label class="form-label" for="phone">Phone</label>
+                    </div>
+
+                    <!-- pass input -->
+                    <div class="form-outline mb-4">
+                        <input class="form-control" name="pass" type="password"  required rows="4"></input>
+                        <label class="form-label" for="password">Password</label>
+                    </div>
+
+                   <!-- pass input -->
+                    {{!-- <div class="form-outline mb-4">
+                        <input class="form-control" name="confrimpass" type="password"  required rows="4"></input>
+                        <label class="form-label" for="confirm">Confirm</label>
+                    </div> --}}
+
+
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Add</button>
+            </form>
+           </div>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>

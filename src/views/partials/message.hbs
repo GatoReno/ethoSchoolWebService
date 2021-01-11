@@ -1,0 +1,65 @@
+
+  {{#if success }}
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-4 col-sm-4 col-xs-4 col-md-4  pull-right ">
+        <div class="alert alert-success alert-dismissable  fade show p-2 float-right" role="alert">
+          
+
+           <button type="button" class="close float-right" data-dismiss="alert" 
+          aria-label="Close" onclick="closeAlert()">
+            <span aria-hiden="true">
+              &times;
+            </span>
+          </button>
+          {{success}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+
+
+
+  {{#if message }}
+  <div class="container p-4">
+    <div class="row">
+  		<div class="col-4 col-sm-4 col-xs-4 col-md-4  pull-right ">
+			<div class="alert alert-info alert-dismissable fade show   p-2 float-right" role="alert">
+                 
+
+          <button type="button" class="close float-right" data-dismiss="alert" 
+          aria-label="Close" onclick="closeAlert()">
+            <span aria-hiden="true">
+              &times;
+            </span>
+          </button>
+          {{message}}
+
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+
+
+    {{#if errores }}
+  <div class="container p-4">
+    <div class="row">
+		<div class="col-4 col-sm-4 col-xs-4 col-md-4  pull-right ">
+			<div class="alert alert-danger alert-dismissable  fade show   p-2 float-right" role="alert">          
+
+          <button type="button" class="close float-rigth" data-dismiss="alert" aria-label="Close">
+            <span aria-hiden="true">
+              &times;
+            </span>
+          </button>
+          {{errores}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+
+  
+  
